@@ -1,14 +1,11 @@
 package diagnostica;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 /**
  * main
  */
-public class main {
-
-    
+public class Questao1 {
     public static void main(String[] args) {
         
         Scanner read = new Scanner(System.in);

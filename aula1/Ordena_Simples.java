@@ -1,5 +1,7 @@
 package aula1;
 
+import java.util.Scanner;
+
 public class Ordena_Simples {
     public static void main(String[] args) {
         int[] vetor = new int[10];
