@@ -1,16 +1,11 @@
 package aula1;
 
-import java.sql.Timestamp;
 import java.util.Random;
 
 public class Pratica {
     public static void main(String[] args) {
 
-//        Timestamp timestampBeggin = new Timestamp();
-
         int numberList[] = new int[1000];
-
-        System.out.println(numberList.length);
 
         numberList = generateNumber(numberList.length);
 
@@ -24,12 +19,10 @@ public class Pratica {
     private static int[] generateNumber(int length) {
 
         int[] numberList = new int[length];
-
         Random random = new Random();
 
         for (int i = 0; i < length; i++) {
-
-            numberList[length] = random.nextInt();
+            numberList[i] = random.nextInt();
         }
 
         return numberList;
@@ -41,13 +34,13 @@ public class Pratica {
 
         for (int i = 0; i < length; i++) {
 
-            for (int j = 0; j < length - 1; j++) {
+            for (int j = 0; j < (length - 1); j++) {
 
-                if (numberList[j] > numberList[j - 1]) {
+                if (numberList[j] > numberList[j + 1]) {
 
                     int aux = numberList[j];
-                    numberList[j] = numberList[j - 1];
-                    numberList[j - 1] = aux;
+                    numberList[j] = numberList[j + 1];
+                    numberList[j + 1] = aux;
                 }
             }
         }
